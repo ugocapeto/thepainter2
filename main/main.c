@@ -61,9 +61,9 @@ int main(
  Let's read in the input file
  */
 
- fp= fopen("thepainter_input.txt","r");
+ fp= fopen("thepainter2_input.txt","r");
  if ( fp == NULL ) {
-    fprintf(stdout,"thepainter_input.txt not found!\n");
+    fprintf(stdout,"thepainter2_input.txt not found!\n");
     return 1;
  }
 

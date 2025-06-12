@@ -54,7 +54,7 @@ void paint_canvas(
       &rgb_image_colors_arr,
       &rgb_image_colors_nbr
    );
-   
+
    /*
    Allocate memory for canvas_rgb_image_arr
    */

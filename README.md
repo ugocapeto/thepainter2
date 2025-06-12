@@ -75,14 +75,14 @@ Let's look at how a layer is given, for example, this one:
 First and second number represent the cell width and height. Recall that brush strokes are applied using a uniform grid. For each grid cell, one brush stroke is gonna be applied if if the median color in the current canvas differs too much from the reference image. In theory, the grid cell height should be about the same as the brush width.
 Third and fourth number represent the offset in the horizontal (width) and vertical (height) direction. Typically, you would want to use four layers instead of just one for better coverage. That's why there are four layers per brush.  
 Fith and sixth number are the opacity and bumpity strenght just like in "thepainter".  
-Seventh number is the threshold for deciding if the current canvas color is close enough. The larger the number, the looser the painting. Again, same as "thepainter".
+Seventh number is the threshold for deciding if the current canvas color is close enough. The larger the number, the looser the painting. Again, same as "thepainter".  
 Eighth number is the index into the array of brushes.
 
 After the layers come the brushes.
 Each brush is defined by its opacity texture and its bumpity texture.
-For example, here is one brush definition:
-../../texture/brush128/opacity.png
-../../texture/brush128/bumpity.png
+For example, here is one brush definition:  
+../../texture/brush128/opacity.png  
+../../texture/brush128/bumpity.png  
 This brush has a width of 128 pixels and it should be used with a grid cell height equal to 128. Again, matching the sizes between grid cells and brushes is important to get speed. If they don't match, scaling (in particular, downscaling) might get cpu intensive because of having to apply Gaussian blur.
 
 The reference image is "content_image.png". **Unlike "thepainter" where the reference image could be pretty much anything in terms of number of colors, here, it is assumed the reference image uses a limited palette, for example, 16 colors or 32 colors.**

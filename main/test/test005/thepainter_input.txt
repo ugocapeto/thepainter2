@@ -1,0 +1,10 @@
+content_image.png
+../../texture/canvas02/rgb.png
+../../texture/canvas02/bumpity.png
+1
+200 150 1 1.0 1.0 0.0 0
+1
+../../texture/brush01/opacity.png
+../../texture/brush01/bumpity.png
+canvas_rgb_image.png
+canvas_bumpity_image.png

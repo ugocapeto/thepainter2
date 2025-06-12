@@ -87,13 +87,13 @@ This brush has a width of 128 pixels and it should be used with a grid cell heig
 
 The reference image is "content_image.png". **Unlike "thepainter" where the reference image could be pretty much anything in terms of number of colors, here, it is assumed the reference image uses a limited palette, for example, 16 colors or 32 colors.**
 
-In Gimp, you click on Image->Mode->Indexed...:
+In Gimp, to reduce the number of colors, you click on Image->Mode->Indexed...:
 
 ![image](https://github.com/user-attachments/assets/ed226273-85f0-4628-b02a-27d8dd0781e2)
 
 The exec outputs 2 images: "canvas_rgb_image.png" and "canvas_bumpity_image.png". You can use the bumpity map as a bump map to show the texture of the paint.
 
-In Gimp, you click on Filters->Map->Bump Map...:
+In Gimp, to use a bump map, you click on Filters->Map->Bump Map...:
 
 ![image](https://github.com/user-attachments/assets/1bda6fd6-ca6c-43e5-89fe-a4b16283dda9)
 

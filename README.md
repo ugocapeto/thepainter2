@@ -74,7 +74,7 @@ Let's look at how a layer is given, for example, this one:
 192 128  91  64 0.8 0.8 20.0 1  
 First and second number represent the cell width and height. Recall that brush strokes are applied using a uniform grid. For each grid cell, one brush stroke is gonna be applied if if the median color in the current canvas differs too much from the reference image. In theory, the grid cell height should be about the same as the brush width.
 Third and fourth number represent the offset in the horizontal (width) and vertical (height) direction. Typically, you would want to use four layers instead of just one for better coverage. That's why there are four layers per brush.  
-Fith and sixth number are the opacity and bumpity strenght just like in "thepainter".  
+Fifth and sixth number are the opacity and bumpity strenght just like in "thepainter".  
 Seventh number is the threshold for deciding if the current canvas color is close enough. The larger the number, the looser the painting. Again, same as "thepainter".  
 Eighth number is the index into the array of brushes.
 

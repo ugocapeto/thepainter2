@@ -72,8 +72,10 @@ canvas_bumpity_image.png<br />
 In this case, we are gonna paint 24 layers using 6 different brushes.
 The difference between the brushes is the size of the brush. For speed, for a given layer, you really want to use a brush that is about the same size as the layer's cell size. Doesn't have to be but it makes things way faster.
 
-Let's look at how a layer is given, for example, this one:<br />
-192 128<br />91<br />64 0.8 0.8 20.0 1<br />
+Let's look at how a layer is given, for example, this one:
+```
+192 128<br />91<br />64 0.8 0.8 20.0 1
+```
 First and second number represent the cell width and height. Recall that brush strokes are applied using a uniform grid. For each grid cell, one brush stroke is gonna be applied if if the median color in the current canvas differs too much from the reference image. In theory, the grid cell height should be about the same as the brush width.
 Third and fourth number represent the offset in the horizontal (width) and vertical (height) direction. Typically, you would want to use four layers instead of just one for better coverage. That's why there are four layers per brush.<br />
 Fifth and sixth number are the opacity and bumpity strenght just like in "thepainter".<br />
@@ -82,9 +84,11 @@ Eighth number is the index into the array of brushes.
 
 After the layers come the brushes.
 Each brush is defined by its opacity texture and its bumpity texture.
-For example, here is one brush definition:<br />
+For example, here is one brush definition:
+```
 ../../texture/brush128/opacity.png<br />
 ../../texture/brush128/bumpity.png<br />
+```
 This brush has a width of 128 pixels and it should be used with a grid cell height equal to 128. Again, matching the sizes between grid cells and brushes is important to get speed. If they don't match, scaling (in particular, downscaling) might get cpu intensive because of having to apply Gaussian blur.
 
 The reference image is "content_image.png". **Unlike "thepainter" where the reference image could be pretty much anything in terms of number of colors, here, it is assumed the reference image uses a limited palette, for example, 16 colors or 32 colors.**

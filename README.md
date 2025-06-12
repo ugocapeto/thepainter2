@@ -8,7 +8,7 @@ Written and tested on Ubuntu 24.04.
 
 For thepainter2 to link, you need to get [common](https://github.com/ugocapeto/common). The "common" dir should be at the same level as the "thepainter2" dir in your tree structure (if you don't want to play with the Makefiles).
 
-To compile "thepainter2", cd thepainter2, then:  
+To compile "thepainter2", cd thepainter2, then:<br>
 make MODE=debug  
 or  
 make MODE=release  

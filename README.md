@@ -126,4 +126,20 @@ At 100% maginification:
 
 ![image](https://github.com/user-attachments/assets/2a063cf2-bd27-4aae-8de8-176e1c545a13)
 
+Here is another example that's in the test dir.
+
+Reference image (16 colors):
+
+![image](https://github.com/user-attachments/assets/52650c3b-50a3-4234-9baf-bb1a2ccde0e0)
+
+Output from thepainter2 (50% magnification):
+
+![image](https://github.com/user-attachments/assets/232e6679-8fb7-472e-abe0-88915eecec0a)
+
+At 100% magnification:
+
+![image](https://github.com/user-attachments/assets/f3b0581e-b2e8-41a9-b8af-2d13f79bd3b2)
+
 In theory, the only time you may need to edit the input file is if you use reference images that are drastically different from the ones in the test dir (in terms of size). In the test dir, I have images that are 1280 and 1920 pixels along the largest dimension. Basically, larger images require larger brushes.
+
+You can certainly play with the opacity strength and the bumpity strength of each layer to get different effects.

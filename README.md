@@ -23,6 +23,7 @@ The exec reads in a file called "thepainter2_input.txt" that contains all the in
 
 The input looks like this:
 
+```
 content_image.png<br />
 ../../texture/canvas002/rgb.png<br />
 ../../texture/canvas002/bumpity.png<br />
@@ -66,6 +67,7 @@ content_image.png<br />
 ../../texture/brush008/bumpity.png<br />
 canvas_rgb_image.png<br />
 canvas_bumpity_image.png<br />
+```
 
 In this case, we are gonna paint 24 layers using 6 different brushes.
 The difference between the brushes is the size of the brush. For speed, for a given layer, you really want to use a brush that is about the same size as the layer's cell size. Doesn't have to be but it makes things way faster.

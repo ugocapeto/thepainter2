@@ -25,8 +25,8 @@ The input looks like this:
 
 ```
 content_image.png<br />
-../../texture/canvas002/rgb.png<br />
-../../texture/canvas002/bumpity.png<br />
+../../texture/canvas002/rgb.png
+../../texture/canvas002/bumpity.png
 24<br />
 384 256   0   0 0.8 0.8 10.0 0<br />
 384 256 192   0 0.8 0.8 10.0 0<br />
@@ -74,7 +74,7 @@ The difference between the brushes is the size of the brush. For speed, for a gi
 
 Let's look at how a layer is given, for example, this one:
 ```
-192 128<br />91<br />64 0.8 0.8 20.0 1
+192 128  91  64 0.8 0.8 20.0 1
 ```
 First and second number represent the cell width and height. Recall that brush strokes are applied using a uniform grid. For each grid cell, one brush stroke is gonna be applied if if the median color in the current canvas differs too much from the reference image. In theory, the grid cell height should be about the same as the brush width.
 Third and fourth number represent the offset in the horizontal (width) and vertical (height) direction. Typically, you would want to use four layers instead of just one for better coverage. That's why there are four layers per brush.<br />

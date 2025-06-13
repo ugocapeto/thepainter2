@@ -168,7 +168,7 @@ This is what you would get if you used 64 colors instead of 32:
 
 ![image](https://github.com/user-attachments/assets/fae4eaaa-b282-41c8-b2c3-7ecfcb8012b3)
 
-In theory, the only time you may need to edit the input file is if you use reference images that are drastically different from the ones in the test dir (in terms of size). In the test dir, I have images that are 1280 and 1920 pixels along the largest dimension. Basically, larger images require larger brushes.
+In theory, the only time you may need to edit the input file is if you use reference images that are drastically different from the ones in the test dir (in terms of size). In the test dir, I have pixabay images that are 1280 and 1920 pixels along the largest dimension (the dimension is in the name of  dir). I also have a pexels 3696x2448 photo of Fenway. Basically, larger images require larger brushes. In general, when you have larger images, you don't really want to use small brushes, like brush008. But it all depends on how loose you want the produced painting to be.
 
 You can certainly play with the opacity strength and the bumpity strength of each layer to get different effects.
 

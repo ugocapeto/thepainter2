@@ -1,6 +1,6 @@
 # thepainter2
 
-Simulates painting with oil. Input is a photograph. Output is (hopefully) a painterly rendering.
+Simulates painting with oil. Input is a photograph. Output is (hopefully) a painterly rendering with visible brush strokes.
 
 This is, I believe, an improved version of the [thepainter](https://github.com/ugocapeto/thepainter).
 

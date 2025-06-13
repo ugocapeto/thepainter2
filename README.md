@@ -98,7 +98,17 @@ For example, here is one brush definition:
 ```
 This brush has a width of 128 pixels and it should be used with a grid cell height equal to 128. Again, matching the sizes between grid cells and brushes is important to get speed. If they don't match, scaling (in particular, downscaling) might get cpu intensive because of having to apply Gaussian blur.
 
-The reference image is "content_image.png". **Unlike "thepainter" where the reference image could be pretty much anything in terms of number of colors, here, it is assumed the reference image uses a limited palette, for example, 16 colors or 32 colors.**
+The reference image is "content_image.png".
+
+**Unlike "thepainter" where the reference image could be pretty much anything in terms of number of colors, here, it is assumed the reference image uses a limited palette, for example, 16 colors or 32 colors.**
+
+You can tell if the image has too many colors because the exec is gonna be stuck here (when you look at the output on terminal):
+```
+canvas rgb image = canvas_rgb_image.png
+canvas bumpity image = canvas_bumpity_image.png
+```
+
+**Make sure you reduce the number of colors of the image/photo you want to paint before running thepainter2!**
 
 In Gimp, to reduce the number of colors, you click on Image->Mode->Indexed...:
 
@@ -153,6 +163,10 @@ Output image (50% magnification):
 At 100% magnification:
 
 ![image](https://github.com/user-attachments/assets/990371fc-4300-45c4-bfaa-9f7a93d425cf)
+
+This is what you would get if you used 64 colors instead of 32:
+
+![image](https://github.com/user-attachments/assets/fae4eaaa-b282-41c8-b2c3-7ecfcb8012b3)
 
 In theory, the only time you may need to edit the input file is if you use reference images that are drastically different from the ones in the test dir (in terms of size). In the test dir, I have images that are 1280 and 1920 pixels along the largest dimension. Basically, larger images require larger brushes.
 

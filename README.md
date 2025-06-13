@@ -140,6 +140,22 @@ At 100% magnification:
 
 ![image](https://github.com/user-attachments/assets/f3b0581e-b2e8-41a9-b8af-2d13f79bd3b2)
 
+Another example that's in the test dir.
+
+Reference image (32 colors):
+
+![image](https://github.com/user-attachments/assets/957f0921-66fd-4297-8c0d-3bd45dff2111)
+
+Output image (50% magnification):
+
+![image](https://github.com/user-attachments/assets/def9c509-0e9f-430d-9fda-e2bc24d810e7)
+
+At 100% magnification:
+
+![image](https://github.com/user-attachments/assets/990371fc-4300-45c4-bfaa-9f7a93d425cf)
+
 In theory, the only time you may need to edit the input file is if you use reference images that are drastically different from the ones in the test dir (in terms of size). In the test dir, I have images that are 1280 and 1920 pixels along the largest dimension. Basically, larger images require larger brushes.
 
 You can certainly play with the opacity strength and the bumpity strength of each layer to get different effects.
+
+The best way to learn how the exec works is to look at the code, of course. But you can also see what happens when you only create one layer instead of many. Change the parameters and see what happens.
